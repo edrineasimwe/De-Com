@@ -56,6 +56,7 @@ section {
   margin: auto;
   border-radius: 10px;
   flex-grow: 1; /* Allow sections to grow and take up the remaining space */
+  padding: 2rem;
 }
 
 h2 {
@@ -77,12 +78,11 @@ h2 {
 
 .feature {
   background: #fff;
+  padding: 1.5rem; /* Padding is back for .feature */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  /* No padding here now */
 }
 
-/* Removing padding from feature's h3 */
 .feature h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -101,9 +101,9 @@ h2 {
 
 .step {
   background: #fff;
+  padding: 1.5rem; /* Padding added for .step */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  /* No padding here now */
 }
 
 .step h3 {
@@ -124,9 +124,9 @@ h2 {
 
 .feature {
   background: #fff;
+  padding: 1.5rem; /* Padding is back for .feature */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  /* No padding here now */
 }
 
 /* Meet the Team Section */
@@ -144,9 +144,9 @@ h2 {
 
 .team-member {
   background: #fff;
+  padding: 1.5rem; /* Padding added for .team-member */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  /* No padding here now */
 }
 
 .team-member img {
@@ -163,9 +163,9 @@ h2 {
 
 .faq {
   background: #fff;
+  padding: 1.5rem; /* Padding added for .faq */
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  /* No padding here now */
 }
 
 .faq h3 {
