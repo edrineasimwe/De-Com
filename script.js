@@ -1,12 +1,15 @@
-// Theme toggle
-const switcher = document.getElementById("themeSwitcher");
-switcher.addEventListener("change", () => {
-  document.body.classList.toggle("dark", switcher.checked);
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
+  });
 });
 
-// Contact form submission (placeholder)
-document.getElementById("contactForm").addEventListener("submit", function (e) {
+// Simple contact form handler
+document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
-  alert("Thanks for reaching out! We'll get back to you soon.");
-  this.reset();
+  alert("Message sent! (Functionality can be hooked to a real backend)");
 });
