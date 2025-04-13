@@ -1,13 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decentralised Commerce</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StellarCart - Decentralized E-Commerce</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
-    <p>Welcome to Decentralised Commerce!</p>
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="themeSwitcher" />
+      <span class="slider round"></span>
+    </label>
+  </div>
 
+  <header>
+    <h1>StellarCart</h1>
+    <p>Empowering peer-to-peer commerce through the Stellar blockchain.</p>
+    <a href="#features" class="btn">Explore Features</a>
+  </header>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>Decentralized Payments</h3>
+        <p>Secure and borderless transactions powered by the Stellar blockchain.</p>
+      </div>
+      <div class="feature">
+        <h3>Smart Contracts</h3>
+        <p>Automated, trustless agreements between buyers and sellers.</p>
+      </div>
+      <div class="feature">
+        <h3>Global Access</h3>
+        <p>Available to users around the world with no middlemen or banking barriers.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <form id="contactForm">
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 StellarCart. All rights reserved.</p>
+    <p><a href="https://github.com/yourrepo" target="_blank">GitHub</a> | <a href="#">Whitepaper</a></p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
