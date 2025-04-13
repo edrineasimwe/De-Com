@@ -12,6 +12,9 @@ body {
   background: #f4f4f4;
   color: #333;
   padding-top: 50px; /* space for fixed header */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes full viewport height */
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -21,6 +24,7 @@ header {
   color: #fff;
   padding: 2rem 0;
   text-align: center;
+  flex-shrink: 0; /* Prevent the header from shrinking */
 }
 
 header h1 {
@@ -53,6 +57,7 @@ section {
   max-width: 1000px;
   margin: auto;
   border-radius: 10px;
+  flex-grow: 1; /* Allow sections to grow and take up the remaining space */
 }
 
 h2 {
@@ -197,6 +202,7 @@ footer {
   color: #fff;
   padding: 2rem 0;
   text-align: center;
+  flex-shrink: 0; /* Prevent the footer from shrinking */
 }
 
 footer p {
