@@ -1,122 +1,113 @@
-/* Reset default margins/padding */
+/* Reset default margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Basic body styling */
+/* Body */
 body {
   font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background: #f4f4f4;
+  background-color: #f0f0f0;
   color: #333;
-  padding-top: 50px; /* space for fixed header */
+  line-height: 1.6;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure the body takes full viewport height */
-  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
 }
 
 /* Header */
 header {
-  background: #333;
+  background-color: #0078D4;
   color: #fff;
   text-align: center;
-  flex-shrink: 0; /* Prevent the header from shrinking */
-  width: 100%; /* Make header take full width */
+  padding: 5vh 0;
+  flex: 0 1 auto; /* Allow the header to take up natural space */
 }
 
 header h1 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 header p {
-  font-size: 1.25rem;
-  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 header .btn {
-  background: #ffb300;
-  color: #000;
-  padding: 0.75rem 2rem;
+  background-color: #fff;
+  color: #0078D4;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  margin-top: 2rem;
   display: inline-block;
-  margin-top: 1.5rem;
-  margin-bottom: 2rem; /* Added margin to button */
-}
-
-header .btn:hover {
-  background: #e08900;
-}
-
-/* Section styles - Full Width and Minimum Height of 90% of the Screen Height */
-section {
-  width: 100%; /* Ensure sections take full width */
-  padding: 2rem;
-  border-radius: 10px;
-  min-height: 90vh; /* Minimum height of 90% of the viewport height */
-  display: flex;
-  flex-direction: column;
-}
-
-h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  padding: 0;
 }
 
 /* Key Features Section */
 #features {
-  background: #f7f7f7;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  flex-grow: 1; /* Allow the grid to grow and fill remaining space */
+  justify-items: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-bottom: 10%; /* Padding at the bottom */
 }
 
 .feature {
-  background: #fff;
-  padding: 1.5rem;
+  background-color: #f8f8f8;
+  padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  height: 100%; /* Ensure the feature takes up the full height of its grid container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  padding-bottom: 10%; /* Add 10% padding to the bottom of each feature */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .feature i {
+  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #ffb300; /* Icon color */
 }
 
 .feature h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
-  text-align: center;
 }
 
 .feature p {
-  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* How It Works Section */
 #how-it-works {
   background: #e9f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  height: 90vh; /* Ensure section takes up at least 90% of the viewport height */
 }
 
 .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  justify-items: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
   flex-grow: 1; /* Allow the steps grid to grow and fill remaining space */
 }
 
@@ -125,6 +116,11 @@ h2 {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 100%; /* Ensure the step takes up the full height of its container */
 }
 
 .step h3 {
@@ -132,61 +128,100 @@ h2 {
   margin-bottom: 1rem;
 }
 
-/* Why De-Com Section */
-#benefits {
-  background: #f4f8e6;
+.step p {
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
-.feature-grid {
+/* Benefits Section */
+#benefits {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.benefit-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  justify-items: center;
+  align-items: center;
 }
 
-.feature {
-  background: #fff;
-  padding: 1.5rem;
+.benefit {
+  background-color: #f8f8f8;
+  padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-/* Meet the Team Section */
+.benefit h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.benefit p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Team Section */
 #team {
-  background: #f2e0d5;
+  background-color: #e9f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .team-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
-  flex-wrap: wrap;
-  margin-top: 2rem;
 }
 
 .team-member {
-  background: #fff;
+  background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .team-member img {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 1rem;
 }
 
 /* FAQ Section */
 #faq {
-  background: #e1f7e7;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .faq {
-  background: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 800px;
+  padding: 2rem;
 }
 
 .faq h3 {
@@ -194,43 +229,57 @@ h2 {
   margin-bottom: 1rem;
 }
 
+.faq p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 /* Contact Section */
 #contact {
-  background: #e3f1ff;
+  background-color: #e9f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 #contact-form {
+  max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  max-width: 600px;
-  margin: 0 auto;
 }
 
-#contact-form input, #contact-form textarea {
+#contact-form input,
+#contact-form textarea {
+  margin: 0.5rem 0;
   padding: 1rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  resize: vertical;
 }
 
 #contact-form button {
-  padding: 0.75rem;
-  background: #ffb300;
+  padding: 1rem;
+  background-color: #0078D4;
+  color: #fff;
+  font-size: 1rem;
   border: none;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #005f8c;
 }
 
 /* Footer */
 footer {
-  background: #333;
+  background-color: #0078D4;
   color: #fff;
   text-align: center;
-  flex-shrink: 0; /* Prevent the footer from shrinking */
-  width: 100%; /* Make footer take full width */
+  padding: 1rem;
 }
 
 footer p {
@@ -240,19 +289,9 @@ footer p {
 footer a {
   color: #fff;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/* Media queries */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2.5rem;
-  }
-
-  section {
-    padding: 0;
-  }
 }
