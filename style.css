@@ -92,6 +92,7 @@ header p {
 .feature i {
   color: #00796b;
   margin-bottom: 1rem;
+  font-size: 2rem;
 }
 
 .feature h3 {
