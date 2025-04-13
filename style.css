@@ -93,6 +93,11 @@ h2 {
   padding-bottom: 10%; /* Add 10% padding to the bottom of each feature */
 }
 
+.feature i {
+  margin-bottom: 1rem;
+  color: #ffb300; /* Icon color */
+}
+
 .feature h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
