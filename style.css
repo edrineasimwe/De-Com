@@ -16,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   height: 90vh;
-  background-color: #ffffff; /* White */
+  background-color: #2ecc71; /* Green Hero Section */
   padding-left: 5%;
 }
 
@@ -30,18 +30,18 @@ header {
 header h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #2c3e50; /* Dark Blue */
+  color: #ffffff; /* White text */
 }
 
 header p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #34495e; /* Slate Grey */
+  color: #ecf0f1; /* Light Grey Text */
 }
 
 .btn {
-  background-color: #2ecc71; /* Green */
-  color: white;
+  background-color: #ffffff; /* White */
+  color: #2ecc71; /* Green */
   padding: 0.75rem 1.5rem;
   text-decoration: none;
   border-radius: 5px;
