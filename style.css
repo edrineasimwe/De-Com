@@ -22,7 +22,6 @@ body {
 header {
   background: #333;
   color: #fff;
-  padding: 2rem 0;
   text-align: center;
   flex-shrink: 0; /* Prevent the header from shrinking */
 }
@@ -51,7 +50,7 @@ header .btn:hover {
   background: #e08900;
 }
 
-/* Section styles (no padding for sections) */
+/* Section styles (no padding for sections and headers) */
 section {
   max-width: 1000px;
   margin: auto;
@@ -62,6 +61,7 @@ section {
 h2 {
   text-align: center;
   margin-bottom: 2rem;
+  padding: 0;
 }
 
 /* Key Features Section */
@@ -77,11 +77,12 @@ h2 {
 
 .feature {
   background: #fff;
-  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* No padding here now */
 }
 
+/* Removing padding from feature's h3 */
 .feature h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -100,9 +101,9 @@ h2 {
 
 .step {
   background: #fff;
-  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* No padding here now */
 }
 
 .step h3 {
@@ -123,9 +124,9 @@ h2 {
 
 .feature {
   background: #fff;
-  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* No padding here now */
 }
 
 /* Meet the Team Section */
@@ -139,6 +140,13 @@ h2 {
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 2rem;
+}
+
+.team-member {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* No padding here now */
 }
 
 .team-member img {
@@ -155,9 +163,9 @@ h2 {
 
 .faq {
   background: #fff;
-  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  /* No padding here now */
 }
 
 .faq h3 {
@@ -199,7 +207,6 @@ h2 {
 footer {
   background: #333;
   color: #fff;
-  padding: 2rem 0;
   text-align: center;
   flex-shrink: 0; /* Prevent the footer from shrinking */
 }
@@ -224,6 +231,6 @@ footer a:hover {
   }
 
   section {
-    padding: 2rem;
+    padding: 0;
   }
 }
