@@ -5,34 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>De-Com - Decentralized E-Commerce</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
 <body>
   <header>
-    <div class="logo">
+    <div class="hero-content">
       <h1>De-Com</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#how-it-works">How It Works</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="#faq">FAQs</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hamburger" onclick="toggleMenu()">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
+      <p>Empowering peer-to-peer commerce through the Stellar blockchain.</p>
+      <p>Buy and sell digital or physical goods with ease and security.</p>
+      <a href="#how-it-works" class="btn">Get Started</a>
+      <a href="#features" class="btn">Explore Features</a>
     </div>
   </header>
-
-  <section id="hero" class="section">
-    <h2>De-Com</h2>
-    <p>Empowering peer-to-peer commerce through the Stellar blockchain.</p>
-    <a href="#features" class="btn">Explore Features</a>
-  </section>
 
   <section id="features" class="section">
     <h2>Key Features</h2>
@@ -57,16 +42,19 @@
 
   <section id="how-it-works" class="section">
     <h2>How It Works</h2>
-    <div class="steps">
-      <div class="step">
+    <div class="feature-grid">
+      <div class="feature">
+        <i class="fas fa-wallet"></i>
         <h3>1. Connect Wallet</h3>
         <p>Connect your Stellar wallet securely using Freighter or Albedo.</p>
       </div>
-      <div class="step">
+      <div class="feature">
+        <i class="fas fa-search"></i>
         <h3>2. Browse Listings</h3>
         <p>Discover digital or physical goods listed by sellers globally.</p>
       </div>
-      <div class="step">
+      <div class="feature">
+        <i class="fas fa-credit-card"></i>
         <h3>3. Pay with XLM</h3>
         <p>Complete your purchase directly through Stellar—no banks, no borders.</p>
       </div>
@@ -77,7 +65,7 @@
     <h2>Why De-Com?</h2>
     <div class="feature-grid">
       <div class="feature">
-        <i class="fas fa-dollar-sign"></i>
+        <i class="fas fa-percent"></i>
         <h3>Low Fees</h3>
         <p>Transactions on Stellar cost a fraction of a cent—perfect for micro-payments.</p>
       </div>
@@ -96,15 +84,19 @@
 
   <section id="faq" class="section">
     <h2>FAQs</h2>
-    <div class="faq">
-      <h3>What is De-Com?</h3>
-      <p>De-Com is a decentralized e-commerce platform built on the Stellar blockchain.</p>
-
-      <h3>How do I connect my wallet?</h3>
-      <p>You can use supported wallets like Freighter to securely connect and transact.</p>
-
-      <h3>Is it free to use?</h3>
-      <p>Yes, except for a minimal Stellar network fee (~0.00001 XLM per transaction).</p>
+    <div class="feature-grid">
+      <div class="feature">
+        <h3>What is De-Com?</h3>
+        <p>De-Com is a decentralized e-commerce platform built on the Stellar blockchain.</p>
+      </div>
+      <div class="feature">
+        <h3>How do I connect my wallet?</h3>
+        <p>You can use supported wallets like Freighter to securely connect and transact.</p>
+      </div>
+      <div class="feature">
+        <h3>Is it free to use?</h3>
+        <p>Yes, except for a minimal Stellar network fee (~0.00001 XLM per transaction).</p>
+      </div>
     </div>
   </section>
 
