@@ -24,3 +24,11 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
   alert("Message sent! (Functionality can be hooked to a real backend)");
 });
+
+// Toggle Hamburger Menu
+const hamburger = document.getElementById('hamburger-menu');
+const nav = document.querySelector('header nav');
+
+hamburger.addEventListener('click', () => {
+  nav.classList.toggle('active');
+});
