@@ -52,12 +52,14 @@ header .btn:hover {
   background: #e08900;
 }
 
-/* Section styles - Full Width and Minimum Height of 80% of the Screen Height */
+/* Section styles - Full Width and Minimum Height of 90% of the Screen Height */
 section {
   width: 100%; /* Ensure sections take full width */
   padding: 2rem;
   border-radius: 10px;
-  min-height: 80vh; /* Minimum height of 80% of the viewport height */
+  min-height: 90vh; /* Minimum height of 90% of the viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
 h2 {
@@ -75,7 +77,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  height: 80%; /* Make the feature grid take up 80% of the parent area */
+  flex-grow: 1; /* Allow the grid to grow and fill remaining space */
 }
 
 .feature {
@@ -83,7 +85,8 @@ h2 {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  height: 80%; /* Ensure each feature takes up 80% of the parent area */
+  height: 100%; /* Ensure the feature takes up the full height of its grid container */
+  padding-bottom: 10%; /* Add 10% padding to the bottom of each feature */
 }
 
 .feature h3 {
@@ -100,6 +103,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  flex-grow: 1; /* Allow the steps grid to grow and fill remaining space */
 }
 
 .step {
