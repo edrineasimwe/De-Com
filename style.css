@@ -22,7 +22,6 @@ header {
   color: #fff;
   text-align: center;
   padding: 5vh 0;
-  flex: 0 1 auto; /* Allow the header to take up natural space */
 }
 
 header h1 {
@@ -60,8 +59,6 @@ header .btn {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   justify-items: center;
-  align-items: center;
-  flex-grow: 1;
   padding-bottom: 10%; /* Padding at the bottom */
 }
 
@@ -97,18 +94,16 @@ header .btn {
   background: #e9f7f7;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
-  height: 90vh; /* Ensure section takes up at least 90% of the viewport height */
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  justify-items: center; /* Center the items horizontally */
-  align-items: center; /* Center the items vertically */
-  flex-grow: 1; /* Allow the steps grid to grow and fill remaining space */
+  justify-items: center;
 }
 
 .step {
@@ -118,9 +113,9 @@ header .btn {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
-  height: 100%; /* Ensure the step takes up the full height of its container */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .step h3 {
@@ -294,4 +289,77 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .feature h3 {
+    font-size: 1.6rem;
+  }
+
+  .step h3 {
+    font-size: 1.3rem;
+  }
+
+  .team-member h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .feature h3 {
+    font-size: 1.4rem;
+  }
+
+  .step h3 {
+    font-size: 1.2rem;
+  }
+
+  .team-member h3 {
+    font-size: 0.9rem;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .feature h3 {
+    font-size: 1.2rem;
+  }
+
+  .step h3 {
+    font-size: 1rem;
+  }
+
+  .team-member h3 {
+    font-size: 0.8rem;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    font-size: 0.8rem;
+  }
 }
