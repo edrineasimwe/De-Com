@@ -16,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   height: 90vh;
-  background-color: #e0f7fa;
+  background-color: #80deea; /* Light Cyan */
   padding-left: 5%;
 }
 
@@ -38,7 +38,7 @@ header p {
 }
 
 .btn {
-  background-color: #00796b;
+  background-color: #00796b; /* Deep Teal */
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -55,6 +55,27 @@ header p {
   flex-direction: column;
   justify-content: center;
   background-color: white;
+}
+
+#features {
+  background-color: #ffe0b2; /* Light Orange */
+}
+
+#how-it-works {
+  background-color: #c8e6c9; /* Light Green */
+}
+
+#benefits {
+  background-color: #f3e5f5; /* Light Purple */
+}
+
+#faq {
+  background-color: #e1f5fe; /* Light Blue */
+}
+
+#contact {
+  background-color: #fff9c4; /* Light Yellow */
+  padding: 4rem 5%;
 }
 
 .section:nth-child(even) {
@@ -104,11 +125,6 @@ header p {
   font-size: 1rem;
 }
 
-#contact {
-  background-color: #fff;
-  padding: 4rem 5%;
-}
-
 #contact h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -131,7 +147,7 @@ header p {
 }
 
 #contact-form button {
-  background-color: #00796b;
+  background-color: #00796b; /* Deep Teal */
   color: white;
   padding: 0.75rem;
   font-size: 1rem;
@@ -143,7 +159,7 @@ header p {
 footer {
   text-align: center;
   padding: 2rem 0;
-  background-color: #e0f2f1;
+  background-color: #80deea; /* Light Cyan */
   font-size: 0.9rem;
 }
 
