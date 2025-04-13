@@ -21,6 +21,16 @@ body.dark-mode {
   color: #fff;
 }
 
+/* Light mode text color */
+body {
+  color: #333; /* Light mode text color */
+}
+
+/* Dark mode text color */
+body.dark-mode {
+  color: #fff; /* Dark mode text color */
+}
+
 header {
   background: #333;
   color: #fff;
