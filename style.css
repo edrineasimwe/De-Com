@@ -22,6 +22,7 @@ header {
   color: #fff;
   text-align: center;
   padding: 5vh 0;
+  height: 90vh;
 }
 
 header h1 {
@@ -52,6 +53,7 @@ header .btn {
   align-items: center;
   justify-content: center;
   padding-bottom: 10%;
+  height: 90vh; /* Ensure it takes 90% height */
 }
 
 .feature-grid {
@@ -59,7 +61,7 @@ header .btn {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   justify-items: center;
-  width: 100%; /* Ensure it takes as much width as needed */
+  width: 100%;
 }
 
 .feature {
@@ -97,6 +99,7 @@ header .btn {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 90vh;
   padding-bottom: 10%;
 }
 
@@ -139,6 +142,7 @@ header .btn {
   align-items: center;
   justify-content: center;
   padding-bottom: 10%;
+  height: 90vh; /* Set height */
 }
 
 .benefit-grid {
@@ -176,6 +180,7 @@ header .btn {
   align-items: center;
   justify-content: center;
   padding-bottom: 10%;
+  height: 90vh;
 }
 
 .team-grid {
@@ -219,6 +224,7 @@ header .btn {
   align-items: center;
   justify-content: center;
   padding-bottom: 10%;
+  height: 90vh;
 }
 
 .faq {
@@ -245,6 +251,7 @@ header .btn {
   align-items: center;
   justify-content: center;
   padding-bottom: 10%;
+  height: 90vh;
 }
 
 #contact-form {
