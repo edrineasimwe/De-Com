@@ -164,13 +164,13 @@ header p {
 footer {
   text-align: center;
   padding: 2rem 0;
-  background-color: #ffffff; /* White */
+  background-color: #2ecc71; /* Green Footer */
   font-size: 0.9rem;
-  color: #34495e; /* Slate Grey */
+  color: #ffffff; /* White text */
 }
 
 footer a {
-  color: #2ecc71; /* Green */
+  color: #ffffff; /* White */
   text-decoration: none;
 }
 
