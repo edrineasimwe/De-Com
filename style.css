@@ -45,6 +45,7 @@ header .btn {
   border-radius: 5px;
   display: inline-block;
   margin-top: 1.5rem;
+  margin-bottom: 2rem; /* Added margin to button */
 }
 
 header .btn:hover {
@@ -74,6 +75,7 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  height: 80%; /* Make the feature grid take up 80% of the parent area */
 }
 
 .feature {
@@ -81,6 +83,7 @@ h2 {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  height: 80%; /* Ensure each feature takes up 80% of the parent area */
 }
 
 .feature h3 {
