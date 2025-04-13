@@ -51,11 +51,12 @@ header .btn:hover {
   background: #e08900;
 }
 
-/* Section styles - Full Width */
+/* Section styles - Full Width and Minimum Height of 80% of the Screen Height */
 section {
   width: 100%; /* Ensure sections take full width */
   padding: 2rem;
   border-radius: 10px;
+  min-height: 80vh; /* Minimum height of 80% of the viewport height */
 }
 
 h2 {
